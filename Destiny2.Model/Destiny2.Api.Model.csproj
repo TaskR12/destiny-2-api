@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1416793-B675-4660-9E53-75E52F1F2BEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Destiny2.Api.Model</RootNamespace>
+    <AssemblyName>Destiny2.Api.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Components\Challenges\DestinyChallengeStatus.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterActivitiesComponent.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterComponent.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterCustomization.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterPeerView.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterProgressionComponent.cs" />
+    <Compile Include="Components\Characters\DestinyCharacterRenderComponent.cs" />
+    <Compile Include="Components\Characters\DestinyItemPeerView.cs" />
+    <Compile Include="Components\Collectibles\DestinyCollectibleComponent.cs" />
+    <Compile Include="Components\Collectibles\DestinyCollectiblesComponent.cs" />
+    <Compile Include="Components\Collectibles\DestinyProfileCollectiblesComponent.cs" />
+    <Compile Include="Components\Config\DestinyManifest.cs" />
+    <Compile Include="Components\Config\GearAssetDataBaseDefinition.cs" />
+    <Compile Include="Components\Constants\DestinyEnvironmentLocationMapping.cs" />
+    <Compile Include="Components\Dates\DateRange.cs" />
+    <Compile Include="Components\Definitions\ActivityModifiers\DestinyActivityModifierDefinition.cs" />
+    <Compile Include="Components\Definitions\Checklists\DestinyChecklistDefinition.cs" />
+    <Compile Include="Components\Definitions\Checklists\DestinyChecklistEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\Collectibles\DestinyCollectibleAcquisitionBlock.cs" />
+    <Compile Include="Components\Definitions\Collectibles\DestinyCollectibleDefinition.cs" />
+    <Compile Include="Components\Definitions\Common\DestinyDisplayPropertiesDefinition.cs" />
+    <Compile Include="Components\Definitions\Definition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityChallengeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityGraphListEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityGuidedBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityInsertionPointDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityLoadoutRequirement.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityLoadoutRequirementSet.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityMatchmakingBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityModeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityModifierReferenceDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityPlaylistItemDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityRewardDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityTypeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyActivityUnlockStringDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyArtDyeReference.cs" />
+    <Compile Include="Components\Definitions\DestinyBubbleDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyClassDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyDamageTypeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyDestinationDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyDisplayCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyEquipmentSlotDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyFactionDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyFactionVendorDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyGenderDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyHistoricalStatsDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyInventoryBucketDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyInventoryItemDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyItemCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyItemCreationEntryLevelDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyItemInvestmentStatDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyItemSocketEntryPlugItemDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyLocationDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyLocationReleaseDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyMaterialRequirement.cs" />
+    <Compile Include="Components\Definitions\DestinyMaterialRequirementSetDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyNodeActivationRequirement.cs" />
+    <Compile Include="Components\Definitions\DestinyNodeSocketReplaceResponse.cs" />
+    <Compile Include="Components\Definitions\DestinyNodeStepDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyObjectiveDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyObjectivePerkEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyObjectiveStatEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyPlaceDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyPlugSetDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyProgressionDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyProgressionLevelRequirementDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyProgressionStepDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyRaceDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyRecordDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyRewardSourceDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinySandboxPerkDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinySocketCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinySocketTypeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyStatDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyStatGroupDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentExclusiveGroup.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentGridDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentNodeCategory.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentNodeDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentNodeExclusiveSetDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyTalentNodeStepGroups.cs" />
+    <Compile Include="Components\Definitions\DestinyUnlockDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorAcceptedItemDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorActionDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorCategoryEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorCategoryOverlayDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorGroupDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorGroupReference.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorInteractionDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorInteractionReplyDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorInteractionSackEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorInventoryFlyoutBucketDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorInventoryFlyoutDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorItemDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorItemQuantity.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorItemSocketOverride.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorSaleItemActionBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\DestinyVendorServiceDefinition.cs" />
+    <Compile Include="Components\Definitions\EquippingBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\IDefinition.cs" />
+    <Compile Include="Components\Definitions\InventoryItemStatDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemActionBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemActionRequiredItemDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemIntrinsicSocketEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemInventoryBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemPerkEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemQualityBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSetBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSetBlockEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSocketBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSocketCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSocketEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSocketEntryPlugItemDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemSocketEntryPlugItemRandomizedDefinition.cs" />
+    <Compile Include="Components\Definitions\ItemStatBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\Items\DestinyItemTierTypeDefinition.cs" />
+    <Compile Include="Components\Definitions\Items\DestinyItemTierTypeInfusionBlock.cs" />
+    <Compile Include="Components\Definitions\ItemValueBlockDefinition.cs" />
+    <Compile Include="Components\Definitions\Lore\DestinyLoreDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneActivityDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneActivityVariantDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneChallengeActivityDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneChallengeActivityGraphNodeEntry.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneChallengeActivityPhase.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneChallengeDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneQuestDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneQuestRewardItem.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneQuestRewardsDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneRewardCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneRewardEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneValueDefinition.cs" />
+    <Compile Include="Components\Definitions\Milestones\DestinyMilestoneVendorDefinition.cs" />
+    <Compile Include="Components\Definitions\Presentation\DestinyPresentationNodeDefinition.cs" />
+    <Compile Include="Components\Definitions\Presentation\DestinyPresentationNodeRequirementsBlock.cs" />
+    <Compile Include="Components\Definitions\ProgressionRewardDefinition.cs" />
+    <Compile Include="Components\Definitions\Records\DestinyRecordCompletionBlock.cs" />
+    <Compile Include="Components\Definitions\Records\DestinyRecordTitleBlock.cs" />
+    <Compile Include="Components\Definitions\Records\SchemaRecordStateBlock.cs" />
+    <Compile Include="Components\Definitions\Reporting\DestinyReportReasonCategoryDefinition.cs" />
+    <Compile Include="Components\Definitions\Reporting\DestinyReportReasonDefinition.cs" />
+    <Compile Include="Components\Definitions\Sockets\DestinyInsertPlugActionDefinition.cs" />
+    <Compile Include="Components\Definitions\Sockets\DestinyPlugWhitelistEntryDefinition.cs" />
+    <Compile Include="Components\Definitions\Sockets\DestinySocketTypeScalarMaterialRequirementEntry.cs" />
+    <Compile Include="Components\Definitions\StatDisplayDefinition.cs" />
+    <Compile Include="Components\Definitions\Vendors\DestinyVendorLocationDefinition.cs" />
+    <Compile Include="Components\DestinyActivity.cs" />
+    <Compile Include="Components\DestinyItemComponentSetOfint64.cs" />
+    <Compile Include="Components\DestinyItemQuantity.cs" />
+    <Compile Include="Components\DestinyProgression.cs" />
+    <Compile Include="Components\DestinyStat.cs" />
+    <Compile Include="Components\DestinyTalentNode.cs" />
+    <Compile Include="Components\DestinyTalentNodeStatBlock.cs" />
+    <Compile Include="Components\DyeReference.cs" />
+    <Compile Include="Components\Enums.cs" />
+    <Compile Include="Components\Interpolation\InterpolationPoint.cs" />
+    <Compile Include="Components\Interpolation\InterpolationPointFloat.cs" />
+    <Compile Include="Components\Inventory\DestinyCurrenciesComponent.cs" />
+    <Compile Include="Components\Inventory\DestinyInventoryComponent.cs" />
+    <Compile Include="Components\Inventory\InstanciatedItemComponent.cs" />
+    <Compile Include="Components\Inventory\InstanciatedItemDescription.cs" />
+    <Compile Include="Components\Inventory\ItemCollection.cs" />
+    <Compile Include="Components\Inventory\ItemData.cs" />
+    <Compile Include="Components\Inventory\StatDescription.cs" />
+    <Compile Include="Components\Items\DestinyItemComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemInstanceComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemObjectivesComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemPerksComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemPlugComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemRenderComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemSocketsComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemSocketState.cs" />
+    <Compile Include="Components\Items\DestinyItemStatsComponent.cs" />
+    <Compile Include="Components\Items\DestinyItemTalentGridComponent.cs" />
+    <Compile Include="Components\Items\ItemTierTypeDefinition.cs" />
+    <Compile Include="Components\Items\ItemTierTypeInfusionBlock.cs" />
+    <Compile Include="Components\Kiosks\DestinyKiosksComponent.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestone.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneActivity.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneActivityCompletionStatus.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneActivityPhase.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneActivityVariant.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneChallengeActivity.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneQuest.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneRewardCategory.cs" />
+    <Compile Include="Components\Milestones\DestinyMilestoneRewardEntry.cs" />
+    <Compile Include="Components\Misc\Color.cs" />
+    <Compile Include="Components\Perks\DestinyPerkReference.cs" />
+    <Compile Include="Components\PlugSets\DestinyPlugSetsComponent.cs" />
+    <Compile Include="Components\Presentation\DestinyPresentationNodeComponent.cs" />
+    <Compile Include="Components\Presentation\DestinyPresentationNodesComponent.cs" />
+    <Compile Include="Components\Profiles\DestinyProfileComponent.cs" />
+    <Compile Include="Components\Profiles\DestinyProfileProgressionComponent.cs" />
+    <Compile Include="Components\Profiles\DestinyVendorReceiptsComponent.cs" />
+    <Compile Include="Components\Progression\DestinyFactionProgression.cs" />
+    <Compile Include="Components\Quests\DestinyObjectiveProgress.cs" />
+    <Compile Include="Components\Quests\DestinyQuestStatus.cs" />
+    <Compile Include="Components\Records\DestinyCharacterRecordsComponent.cs" />
+    <Compile Include="Components\Records\DestinyProfileRecordsComponent.cs" />
+    <Compile Include="Components\Records\DestinyRecordComponent.cs" />
+    <Compile Include="Components\ResponseOfComponent.cs" />
+    <Compile Include="Components\Responses\DestinyCharacterResponse.cs" />
+    <Compile Include="Components\Responses\DestinyProfileResponse.cs" />
+    <Compile Include="Components\Responses\ItemResponse.cs" />
+    <Compile Include="Components\Sockets\DestinyItemPlug.cs" />
+    <Compile Include="Components\User\UserInfoCard.cs" />
+    <Compile Include="Components\Vendors\DestinyVendorReceipt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
